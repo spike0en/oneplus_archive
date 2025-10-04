@@ -1,6 +1,10 @@
 #!/bin/bash
 set -ex
 
+# Define partition categories
+BOOT="boot init_boot vendor_boot recovery dtbo"
+FIRMWARE="abl aop_config aop bluetooth cpucp cpucp_dtb devcfg dsp engineering_cdt featenabler hyp imagefv keymaster modem oplus_sec oplusstanvbk qupfw shrm splash tz uefi uefisecapp xbl_config xbl_ramdump xbl"
+
 # Extract full update
 aria2c -x5 "$1" -o ota.zip
 unzip ota.zip payload.bin
