@@ -40,25 +40,51 @@ for i in ${@:2}; do
 done
 wait
 
-# Create a split 7z image
+# Prepare output folders
 mkdir out
-mkdir dyn
+mkdir boot
+mkdir firmware
+
 cd ota
-# Calculate hash
+
+# Move boot-related images
+for img in $BOOT; do
+    if [ -f "${img}.img" ]; then
+        mv "${img}.img" ../boot/
+    fi
+done
+
+# Move firmware-related images
+for img in $FIRMWARE; do
+    if [ -f "${img}.img" ]; then
+        mv "${img}.img" ../firmware/
+    fi
+done
+
+cd ../boot
+# Generate hashes for boot images
 for h in md5 sha1 sha256; do
-  ls * | parallel openssl dgst -$h -r | sort -k2 -V > ../out/${TAG}-hash.$h &
+    ls * | parallel openssl dgst -$h -r | sort -k2 -V > ../out/${TAG}-boot-hash.$h &
 done
-ls * | parallel xxh128sum | sort -k2 -V > ../out/${TAG}-hash.xxh128 &
-wait
-for f in system system_ext product vendor vendor_dlkm odm; do
-    mv ${f}.img ../dyn
-done
-7z a -mx6 ../out/${TAG}-image.7z * &
-cd ../dyn
-7z a -mx6 -v1g ../out/${TAG}-image-logical.7z *
-wait
+ls * | parallel xxh128sum | sort -k2 -V > ../out/${TAG}-boot-hash.xxh128 &
+# Compress boot images
+7z a -mx6 ../out/${TAG}-boot.7z * &
 cd ..
-rm -rf ota dyn
+
+cd firmware
+# Generate hashes for firmware images
+for h in md5 sha1 sha256; do
+    ls * | parallel openssl dgst -$h -r | sort -k2 -V > ../out/${TAG}-firmware-hash.$h &
+done
+ls * | parallel xxh128sum | sort -k2 -V > ../out/${TAG}-firmware-hash.xxh128 &
+# Compress firmware images
+7z a -mx6 ../out/${TAG}-firmware.7z * &
+cd ..
+
+wait
+
+# Cleanup
+rm -rf ota boot firmware
 
 # Echo tag name and release body
 echo "tag=$TAG" >> "$GITHUB_OUTPUT"
