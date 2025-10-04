@@ -67,25 +67,20 @@ for img in $FIRMWARE; do
 done
 
 cd ../boot
-# Generate hashes for boot images
-for h in md5 sha1 sha256; do
-    ls * | parallel openssl dgst -$h -r | sort -k2 -V > ../out/${TAG}-boot-hash.$h &
-done
-ls * | parallel xxh128sum | sort -k2 -V > ../out/${TAG}-boot-hash.xxh128 &
+# Generate SHA-256 hashes for boot images
+ls * | parallel openssl dgst -sha256 -r | sort -k2 -V > ../out/${TAG}-boot-hash.sha256
+
 # Compress boot images
-7z a -mx6 ../out/${TAG}-boot.7z * &
+7z a -mx6 ../out/${TAG}-boot.7z *
 cd ..
 
 cd firmware
-# Generate hashes for firmware images
-for h in md5 sha1 sha256; do
-    ls * | parallel openssl dgst -$h -r | sort -k2 -V > ../out/${TAG}-firmware-hash.$h &
-done
-ls * | parallel xxh128sum | sort -k2 -V > ../out/${TAG}-firmware-hash.xxh128 &
-# Compress firmware images
-7z a -mx6 ../out/${TAG}-firmware.7z * &
-cd ..
+# Generate SHA-256 hashes for firmware images
+ls * | parallel openssl dgst -sha256 -r | sort -k2 -V > ../out/${TAG}-firmware-hash.sha256
 
+# Compress firmware images
+7z a -mx6 ../out/${TAG}-firmware.7z *
+cd ..
 wait
 
 # Cleanup
