@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+# SPDX-FileCopyrightText: luk1337
+# SPDX-License-Identifier: MIT
+# Modified by: spike0en
+#
 set -ex
 
 # Define partition categories
