@@ -5,7 +5,7 @@ set -ex
 aria2c -x5 "$1" -o ota.zip
 unzip ota.zip payload.bin
 mv payload.bin payload_working.bin
-TAG="`unzip -p ota.zip payload_properties.txt | grep ^POST_OTA_VERSION= | cut -b 18-`"
+TAG="`unzip -p ota.zip META-INF/com/android/metadata | grep ^version_name= | cut -d= -f2-`"
 BODY="[$TAG]($1) (full)"
 rm ota.zip
 mkdir ota
@@ -20,7 +20,7 @@ for i in ${@:2}; do
     unzip ota.zip payload.bin
     wait
     mv payload.bin payload_working.bin
-    TAG="`unzip -p ota.zip payload_properties.txt | grep ^POST_OTA_VERSION= | cut -b 18-`"
+    TAG="`unzip -p ota.zip META-INF/com/android/metadata | grep ^version_name= | cut -d= -f2-`"
     BODY="$BODY -> [$TAG]($i)"
     rm ota.zip
 
