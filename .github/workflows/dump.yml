@@ -6,9 +6,16 @@ on:
       urls:
         description: 'URLs'
         required: true
-      name:
-        description: 'Name'
+      region:
+        description: 'Region'
         required: true
+        type: choice
+        options:
+          - IN
+          - EU
+          - GLO
+          - NA
+          - CN
 
 jobs:
   dump:
