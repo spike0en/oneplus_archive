@@ -4,8 +4,15 @@ on:
   workflow_dispatch:
     inputs:
       urls:
-        description: 'URLs'
+        description: 'URLs (space-separated)'
         required: true
+      codename:
+        description: 'Device Codename'
+        required: true
+        type: choice
+        options:
+          - dodge
+          - waffle
       region:
         description: 'Region'
         required: true
@@ -33,7 +40,7 @@ jobs:
 
     - name: Dump
       id: dump
-      run: echo ${{ inputs.urls }} | xargs ./dump.sh
+      run: ./dump.sh ${{ inputs.codename }} ${{ inputs.region }} ${{ inputs.urls }}
 
     - name: Upload release assets
       uses: ncipollo/release-action@v1
@@ -41,5 +48,5 @@ jobs:
         artifacts: out/*
         artifactErrorsFailBuild: true
         body: ${{ steps.dump.outputs.body }}
-        tag: ${{ steps.dump.outputs.tag }}_${{ github.event.inputs.name }}
+        tag: ${{ steps.dump.outputs.tag }}_${{ github.event.inputs.region }}
         token: ${{ secrets.GITHUB_TOKEN }}
