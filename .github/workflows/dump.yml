@@ -43,7 +43,7 @@ jobs:
       run: ./dump.sh ${{ inputs.codename }} ${{ inputs.region }} ${{ inputs.urls }}
 
     - name: Upload release assets
-      uses: ncipollo/release-action@v1
+      uses: ncipollo/release-action@v1.20.0
       with:
         artifacts: out/*
         artifactErrorsFailBuild: true
