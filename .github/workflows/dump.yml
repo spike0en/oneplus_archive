@@ -12,6 +12,7 @@ on:
         type: choice
         options:
           - dodge
+          - erhai
           - waffle
       region:
         description: 'Region'
