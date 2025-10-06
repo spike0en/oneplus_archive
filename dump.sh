@@ -95,6 +95,16 @@ ls * | parallel openssl dgst -sha256 -r | sort -k2 -V > ../out/${TAG}_${REGION}-
 cd ..
 wait
 
+# Sanitize filenames for release assets
+cd out
+for f in *; do
+    safe_name=$(echo "$f" | sed 's/(/-/' | sed 's/)//g')
+    if [ "$f" != "$safe_name" ]; then
+        mv "$f" "$safe_name"
+    fi
+done
+cd ..
+
 # Cleanup
 rm -rf ota boot firmware
 
