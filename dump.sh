@@ -25,8 +25,37 @@ echo "Boot Partitions: $BOOT"
 echo "Firmware Partitions: $FIRMWARE"
 echo "Region: $REGION"
 
+# Download ota file using gdown (for Google Drive links)
+download_with_gdown() {
+    echo "Downloading with gdown: $1"
+    gdown --fuzzy "$1" -O ota.zip
+}
+
+# Download ota file using aria2c (for other URLs)
+download_with_aria2c() {
+    echo "Downloading with aria2c: $1"
+    aria2c -x 5 "$1" -o ota.zip
+}
+
+# Determine the correct download method based on URL and call it
+download_file() {
+    local url="$1"
+    echo "Processing URL: $url"
+    if [[ "$url" == *"drive.google.com"* ]]; then
+        download_with_gdown "$url"
+    else
+        download_with_aria2c "$url"
+    fi
+}
+
+# Check if at least one URL is provided
+if [ -z "$1" ]; then
+    echo "Error: No OTA URL provided." >&2
+    exit 1
+fi
+
 # Extract full update
-aria2c -x5 "$1" -o ota.zip
+download_file "$1"
 unzip ota.zip payload.bin
 mv payload.bin payload_working.bin
 TAG="`unzip -p ota.zip META-INF/com/android/metadata | grep ^version_name= | cut -b 14- | sed 's/ /_/g'`"
@@ -40,7 +69,7 @@ mkdir ota
 
 # Apply incrementals
 for i in "${@:2}"; do
-    aria2c -x5 "$i" -o ota.zip
+    download_file "$i"
     unzip ota.zip payload.bin
     wait
     mv payload.bin payload_working.bin

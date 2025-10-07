@@ -38,6 +38,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt -y install aria2 zstd p7zip-full parallel openssl xxhash
+        python3 -m pip install gdown
 
     - name: Dump
       id: dump
