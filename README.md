@@ -29,12 +29,24 @@
 
 <br>
 
-| Model ID    | Region           | Releases |
-|-------------|------------------|----------|
-| CPH2649     | India (IN)                 | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2649&expanded=true) |
-| CPH2653     | Global (ROW) / Europe (EU) | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2653&expanded=true) |
-| CPH2655     | North America (NA)         | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2655&expanded=true) |
-| PJZ110      | China (CN)                 | [View](https://github.com/spike0en/oneplus_archive/releases?q=PJZ110&expanded=true)  |
+| Model ID   | Region                     | Releases                                                                             |
+|------------|----------------------------|--------------------------------------------------------------------------------------|
+| CPH2649    | India (IN)                 | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2649&expanded=true) |
+| CPH2653    | Global (GLO) / Europe (EU) | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2653&expanded=true) |
+| CPH2655    | North America (NA)         | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2655&expanded=true) |
+| PJZ110     | China (CN)                 | [View](https://github.com/spike0en/oneplus_archive/releases?q=PJZ110&expanded=true)  |
+
+</details>
+
+<details>
+  <summary>Oneplus 13(s/t) - pagani</summary>
+
+<br>
+
+| Model ID   | Region              | Releases                                                                             |
+|------------|---------------------|--------------------------------------------------------------------------------------|
+| CPH2723    | Rest of World (ROW) | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2723&expanded=true) |
+| PKX110     | China (CN)          | [View](https://github.com/spike0en/oneplus_archive/releases?q=PKX110&expanded=true)  |
 
 </details>
 
@@ -43,10 +55,10 @@
 
 <br>
 
-| Model ID   | Region            | Releases |
-|------------|-------------------|----------|
+| Model ID   | Region                     | Releases                                                                             |
+|------------|----------------------------|--------------------------------------------------------------------------------------|
 | CPH2573    | India (IN)                 | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2573&expanded=true) |
-| CPH2581    | Global (ROW) / Europe (EU) | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2581&expanded=true) |
+| CPH2581    | Global (GLO) / Europe (EU) | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2581&expanded=true) |
 | CPH2583    | North America (NA)         | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2583&expanded=true) |
 | PJD110     | China (CN)                 | [View](https://github.com/spike0en/oneplus_archive/releases?q=PJD110&expanded=true)  |
 
