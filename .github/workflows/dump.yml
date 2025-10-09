@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       urls:
-        description: 'URLs (space-separated)'
+        description: 'URLs (space or comma-separated)'
         required: true
       codename:
         description: 'Device Codename'
@@ -44,7 +44,13 @@ jobs:
 
     - name: Dump
       id: dump
-      run: ./dump.sh ${{ inputs.codename }} ${{ inputs.region }} ${{ inputs.urls }}
+      run: |
+        IFS=',' read -ra URLS <<< "${{ inputs.urls }}"
+        URL_ARGS=""
+        for url in "${URLS[@]}"; do
+          URL_ARGS+="$url "
+        done
+        ./dump.sh ${{ inputs.codename }} ${{ inputs.region }} $URL_ARGS "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
 
     - name: Upload release assets
       uses: ncipollo/release-action@v1.20.0

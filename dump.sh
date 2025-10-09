@@ -9,7 +9,7 @@ set -ex
 # Define path to devices.json
 DEVICES_JSON="devices.json"
 
-# Device codename and region from arguments
+# Device codename, region, and workflow run URL from arguments
 DEVICE_CODENAME="$1"
 REGION="$2"
 
@@ -17,13 +17,20 @@ REGION="$2"
 BOOT=$(jq -r --arg model "$DEVICE_CODENAME" '.devices[$model].boot_partitions | join(" ")' "$DEVICES_JSON")
 FIRMWARE=$(jq -r --arg model "$DEVICE_CODENAME" '.devices[$model].firmware_partitions | join(" ")' "$DEVICES_JSON")
 
-# Shift arguments to remove codename and region, so $1 refers to the first URL
-shift 2
+# Get the workflow run URL (last argument)
+WORKFLOW_RUN_URL="${!#}"
+
+# Collect OTA URLs into an array, excluding codename, region, and workflow URL
+declare -a OTA_URLS
+for ((i=3; i<=$#-1; i++)); do
+    OTA_URLS+=("${!i}")
+done
 
 echo "Device Codename: $DEVICE_CODENAME"
 echo "Boot Partitions: $BOOT"
 echo "Firmware Partitions: $FIRMWARE"
 echo "Region: $REGION"
+echo "Workflow Run URL: $WORKFLOW_RUN_URL"
 
 # Download ota file using gdown (for Google Drive links)
 download_with_gdown() {
@@ -49,17 +56,17 @@ download_file() {
 }
 
 # Check if at least one URL is provided
-if [ -z "$1" ]; then
+if [ ${#OTA_URLS[@]} -eq 0 ]; then
     echo "Error: No OTA URL provided." >&2
     exit 1
 fi
 
 # Extract full update
-download_file "$1"
+download_file "${OTA_URLS[0]}"
 unzip ota.zip payload.bin
 mv payload.bin payload_working.bin
 TAG="`unzip -p ota.zip META-INF/com/android/metadata | grep ^version_name= | cut -b 14- | sed 's/ /_/g'`"
-BODY="[$TAG]($1) (full)"
+BODY="[$TAG](${OTA_URLS[0]}) (full)"
 rm ota.zip
 mkdir ota
 (
@@ -68,7 +75,7 @@ mkdir ota
 ) & # Allow subsequent downloads to be done in parallel
 
 # Apply incrementals
-for i in "${@:2}"; do
+for i in "${OTA_URLS[@]:1}"; do # Iterate from the second URL
     download_file "$i"
     unzip ota.zip payload.bin
     wait
@@ -139,4 +146,8 @@ rm -rf ota boot firmware
 
 # Echo tag name and release body
 echo "tag=$TAG" >> "$GITHUB_OUTPUT"
-echo "body=$BODY" >> "$GITHUB_OUTPUT"
+echo "body<<EOF" >> "$GITHUB_OUTPUT"
+echo "$BODY" >> "$GITHUB_OUTPUT"
+echo "" >> "$GITHUB_OUTPUT"
+echo "**Workflow Run**: [Here]($WORKFLOW_RUN_URL)" >> "$GITHUB_OUTPUT"
+echo "EOF" >> "$GITHUB_OUTPUT"
