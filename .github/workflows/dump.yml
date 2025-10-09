@@ -12,7 +12,9 @@ on:
         type: choice
         options:
           - dodge
+          - pagani
           - erhai
+          - giulia
           - waffle
       region:
         description: 'Region'

@@ -8,12 +8,28 @@
         "abl", "aop_config", "aop", "bluetooth", "cpucp", "cpucp_dtb", "devcfg", "dsp", "engineering_cdt", "featenabler", "hyp", "imagefv", "keymaster", "modem", "oplus_sec", "oplusstanvbk", "pdp", "pdp_cdb", "pvmfw", "qupfw", "shrm", "soccp_dcd", "soccp_debug", "splash", "spuservice", "tz", "uefi", "uefisecapp", "xbl_config", "xbl_ramdump", "xbl"
       ]
     },
+    "pagani": {
+      "boot_partitions": [
+        "boot", "init_boot", "vendor_boot", "recovery", "dtbo"
+      ],
+      "firmware_partitions": [
+        "abl", "aop_config", "aop", "bluetooth", "cpucp", "cpucp_dtb", "devcfg", "dsp", "engineering_cdt", "featenabler", "hyp", "imagefv", "keymaster", "modem", "oplus_sec", "oplusstanvbk", "pdp", "pdp_cdb", "pvmfw", "qupfw", "shrm", "soccp_dcd", "soccp_debug", "splash", "spuservice", "tz", "uefi", "uefisecapp", "xbl_config", "xbl_ramdump", "xbl"
+      ]
+    },
     "erhai": {
       "boot_partitions": [
         "boot", "init_boot", "vendor_boot", "recovery", "dtbo"
       ],
       "firmware_partitions": [
         "abl", "aop", "aop_config", "bluetooth", "cpucp", "cpucp_dtb", "devcfg", "dsp", "engineering_cdt", "featenabler", "hyp", "imagefv", "keymaster", "modem", "oplus_sec", "pdp", "pdp_cdb", "pvmfw", "qupfw", "shrm", "soccp_dcd", "soccp_debug", "splash", "spuservice", "tz", "uefi", "uefisecapp", "xbl", "xbl_config", "xbl_ramdump"
+      ]
+    },
+    "giulia": {
+      "boot_partitions": [
+        "boot", "init_boot", "vendor_boot", "recovery", "dtbo"
+      ],
+      "firmware_partitions": [
+        "abl", "aop_config", "aop", "bluetooth", "cpucp", "cpucp_dtb", "devcfg", "dsp", "engineering_cdt", "featenabler", "hyp", "imagefv", "keymaster", "modem", "oplus_sec", "oplusstanvbk", "qupfw", "shrm", "splash", "tz", "uefi", "uefisecapp", "xbl_config", "xbl_ramdump", "xbl"
       ]
     },
     "waffle": {
