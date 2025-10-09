@@ -39,6 +39,14 @@
       "firmware_partitions": [
         "abl", "aop_config", "aop", "bluetooth", "cpucp", "cpucp_dtb", "devcfg", "dsp", "engineering_cdt", "featenabler", "hyp", "imagefv", "keymaster", "modem", "oplus_sec", "oplusstanvbk", "qupfw", "shrm", "splash", "tz", "uefi", "uefisecapp", "xbl_config", "xbl_ramdump", "xbl"
       ]
+    },
+    "aston": {
+      "boot_partitions": [
+        "boot", "dtbo", "init_boot", "vendor_boot"
+      ],
+      "firmware_partitions": [
+        "abl", "aop", "aop_config", "bluetooth", "cpucp", "devcfg", "dsp", "engineering_cdt", "featenabler", "hyp", "imagefv", "keymaster", "modem", "oplus_sec", "oplusstanvbk", "qupfw", "shrm", "splash", "tz", "uefi", "uefisecapp", "xbl", "xbl_config", "xbl_ramdump"
+      ]
     }
   }
 }
