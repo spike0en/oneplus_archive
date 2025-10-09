@@ -65,6 +65,7 @@
 | CPH2691    | IN     | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2691&expanded=true) |
 | CPH2645    | ROW    | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2645&expanded=true) |
 | CPH2647    | NA     | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2647&expanded=true) |
+| PKG110     | CN     | [View](https://github.com/spike0en/oneplus_archive/releases?q=PKG110&expanded=true) |
 
 </details>
 
