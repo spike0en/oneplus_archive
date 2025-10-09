@@ -84,7 +84,7 @@
 </details>
 
 <details>
-  <summary>Oneplus 12R - aston</summary>
+  <summary>Oneplus 12R / Ace 3 - aston</summary>
 
 <br>
 
