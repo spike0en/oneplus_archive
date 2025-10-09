@@ -65,7 +65,7 @@
 | CPH2691    | IN     | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2691&expanded=true) |
 | CPH2645    | ROW    | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2645&expanded=true) |
 | CPH2647    | NA     | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2647&expanded=true) |
-| PKG110     | CN     | [View](https://github.com/spike0en/oneplus_archive/releases?q=PKG110&expanded=true) |
+| PKG110     | CN     | [View](https://github.com/spike0en/oneplus_archive/releases?q=PKG110&expanded=true)  |
 
 </details>
 
@@ -80,6 +80,20 @@
 | CPH2581    | ROW    | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2581&expanded=true) |
 | CPH2583    | NA     | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2583&expanded=true) |
 | PJD110     | CN     | [View](https://github.com/spike0en/oneplus_archive/releases?q=PJD110&expanded=true)  |
+
+</details>
+
+<details>
+  <summary>Oneplus 12R - aston</summary>
+
+<br>
+
+| Model ID   | Region | Releases |
+|------------|--------|----------|
+| CPH2585    | IN     | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2585&expanded=true) |
+| CPH2609    | ROW    | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2609&expanded=true) |
+| CPH2611    | NA     | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2611&expanded=true) |
+| PJE110     | CN     | [View](https://github.com/spike0en/oneplus_archive/releases?q=PJE110&expanded=true)  |
 
 </details>
 
