@@ -22,8 +22,6 @@ on:
         type: choice
         options:
           - IN
-          - EU
-          - GLO
           - NA
           - CN
           - ROW
