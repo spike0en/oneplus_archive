@@ -15,9 +15,44 @@
 - It is useful for flashing custom ROMs that require a specific firmware version, especially when that version isn't included with the ROM itself.
 - Additionally, the archive provides stock boot images in an archived fashion, which can be helpful for rooting your device or restoring stock partitions during OTA updates.
 
-## Releases
+---
+
+## Downloads 📥
 
 - The releases have been tagged [**here**](https://github.com/spike0en/oplus_firmware_archive/releases) following the format: `version_name`_`region`.
+- Select your **device model** from the dropdown list below to access it's **Release Index**:
+
+---
+
+<details>
+  <summary>Oneplus 13 - dodge</summary>
+
+<br>
+
+| Model ID    | Region           | Releases |
+|-------------|------------------|----------|
+| CPH2649     | India (IN)                 | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2649&expanded=true) |
+| CPH2653     | Global (ROW) / Europe (EU) | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2653&expanded=true) |
+| CPH2655     | North America (NA)         | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2655&expanded=true) |
+| PJZ110      | China (CN)                 | [View](https://github.com/spike0en/oneplus_archive/releases?q=PJZ110&expanded=true)  |
+
+</details>
+
+<details>
+  <summary>Oneplus 12 - waffle</summary>
+
+<br>
+
+| Model ID   | Region            | Releases |
+|------------|-------------------|----------|
+| CPH2573    | India (IN)                 | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2573&expanded=true) |
+| CPH2581    | Global (ROW) / Europe (EU) | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2581&expanded=true) |
+| CPH2583    | North America (NA)         | [View](https://github.com/spike0en/oneplus_archive/releases?q=CPH2583&expanded=true) |
+| PJD110     | China (CN)                 | [View](https://github.com/spike0en/oneplus_archive/releases?q=PJD110&expanded=true)  |
+
+</details>
+
+---
 
 ## Integrity Check
 
