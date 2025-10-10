@@ -124,6 +124,16 @@ Special thanks to these contributors for their invaluable work and support:
 - **[luk1337](https://github.com/luk1337/oplus_archive)**
 - **[arter97](https://github.com/arter97/nothing_archive)**
 
+### Co-maintainers
+
+Project is co-maintained by:
+- [madmax7896](https://github.com/madmax7896)
+- [chandu078](https://github.com/chandu078)
+- [HELLBOY017](https://github.com/HELLBOY017)
+- [gotenksIN](https://github.com/gotenksIN)
+- [PHATWalrus](https://github.com/PHATWalrus)
+- [yashaswee-exe](https://github.com/yashaswee-exe)
+
 ## Support the Project ⭐
 
 If this archive has been helpful, please consider **[starring the repository](https://github.com/spike0en/oneplus_archive/stargazers)**. Your support helps keep the project discoverable and active!
