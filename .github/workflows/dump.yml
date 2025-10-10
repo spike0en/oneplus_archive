@@ -16,6 +16,7 @@ on:
           - erhai
           - giulia
           - waffle
+          - aston
       region:
         description: 'Region'
         required: true
