@@ -7,7 +7,7 @@ on:
         description: 'URLs (space or comma-separated)'
         required: true
       codename:
-        description: 'Device Codename'
+        description: 'Device'
         required: true
         type: choice
         options:
@@ -16,16 +16,16 @@ on:
           - erhai
           - giulia
           - waffle
+          - aston
       region:
         description: 'Region'
         required: true
         type: choice
         options:
           - IN
-          - EU
-          - GLO
           - NA
           - CN
+          - ROW
 
 jobs:
   dump:
