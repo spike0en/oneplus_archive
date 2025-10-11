@@ -30,37 +30,11 @@ on:
 jobs:
   dump:
     permissions: write-all
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
-    steps:
-    - name: Count URLs
-      id: count_urls
-      run: |
-        # Replace commas with spaces and then split by spaces to count URLs
-        NORMALIZED_URLS=$(echo "${{ inputs.urls }}" | tr ',' ' ')
-        URL_ARRAY=($NORMALIZED_URLS)
-        URL_COUNT=${#URL_ARRAY[@]}
-        echo "Number of URLs: $URL_COUNT"
-        echo "url_count=$URL_COUNT" >> $GITHUB_OUTPUT
-
-    - name: Run maximize-build-space
-      if: steps.count_urls.outputs.url_count > 1
-      uses: easimon/maximize-build-space@master
-      with:
-        remove-android: 'true'
-        remove-dotnet: 'true'
-        remove-haskell: 'true'
-        remove-codeql: 'true'
-        remove-docker-images: 'true'
-        
+    steps:      
     - name: Checkout repo
       uses: actions/checkout@v4
-
-    - name: Setup
-      run: |
-        sudo apt update
-        sudo apt -y install aria2 zstd p7zip-full parallel openssl xxhash
-        python3 -m pip install gdown
 
     - name: Dump
       id: dump
