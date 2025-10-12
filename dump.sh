@@ -41,7 +41,7 @@ download_with_gdown() {
 # Download ota file using aria2c (for other URLs)
 download_with_aria2c() {
     echo "Downloading with aria2c: $1"
-    aria2c -x 5 "$1" -o ota.zip
+    aria2c -x 16 -s 16 --max-connection-per-server=16 "$1" -o ota.zip
 }
 
 # Determine the correct download method based on URL and call it
@@ -114,21 +114,18 @@ for img in $FIRMWARE; do
     fi
 done
 
+# Generate SHA-256 hashes and compress with 7z for boot images
 cd ../boot
-# Generate SHA-256 hashes for boot images
-ls * | parallel openssl dgst -sha256 -r | sort -k2 -V > ../out/${TAG}_${REGION}-boot-hash.sha256
-
-# Compress boot images
-7z a -mx6 ../out/${TAG}_${REGION}-boot.7z *
+ls * | parallel -j $(nproc) openssl dgst -sha256 -r | sort -k2 -V > ../out/${TAG}_${REGION}-boot-hash.sha256
+7z a -mx6 -mmt$(nproc) ../out/${TAG}_${REGION}-boot.7z *
 cd ..
 
+# Repeat for firmware images
 cd firmware
-# Generate SHA-256 hashes for firmware images
-ls * | parallel openssl dgst -sha256 -r | sort -k2 -V > ../out/${TAG}_${REGION}-firmware-hash.sha256
-
-# Compress firmware images
-7z a -mx6 ../out/${TAG}_${REGION}-firmware.7z *
+ls * | parallel -j $(nproc) openssl dgst -sha256 -r | sort -k2 -V > ../out/${TAG}_${REGION}-firmware-hash.sha256
+7z a -mx6 -mmt$(nproc) ../out/${TAG}_${REGION}-firmware.7z *
 cd ..
+
 wait
 
 # Sanitize filenames for release assets
