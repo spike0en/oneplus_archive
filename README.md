@@ -31,6 +31,18 @@
 ---
 
 <details>
+  <summary>Oneplus Pad 3 / Pad 2 Pro - erhai</summary>
+
+<br>
+
+| Model ID   | Region | Releases |
+|------------|--------|----------|
+| OPD2415    | ROW    | [View](https://github.com/spike0en/oneplus_archive/releases?q=OPD2415&expanded=true) |
+| OPD2413    | CN     | [View](https://github.com/spike0en/oneplus_archive/releases?q=OPD2413&expanded=true) |
+
+</details>
+
+<details>
   <summary>Oneplus 13 - dodge</summary>
 
 <br>
