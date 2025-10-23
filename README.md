@@ -4,12 +4,12 @@
 
 [![Hits](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fspike0en%2Foplus_firmware_archive&label=Hits&icon=github&color=%23b02a37&labelColor=2E2E3F)](https://github.com/spike0en/oplus_firmware_archive)
 
-[![Stars](https://img.shields.io/github/stars/spike0en/oplus_firmware_archive?label=Stars&logo=github&logoColor=white&color=fb481f&labelColor=2E2E3F&style=flat)](https://github.com/spike0en/oplus_firmware_archive/stargazers)
-[![Contributors](https://img.shields.io/github/contributors/spike0en/oplus_firmware_archive?label=Contributors&logo=github&logoColor=white&color=2b2a7b&labelColor=2E2E3F&style=flat)](https://github.com/spike0en/oplus_firmware_archive/graphs/contributors)
-[![Forks](https://img.shields.io/github/forks/spike0en/oplus_firmware_archive?label=Forks&logo=github&logoColor=white&color=eeb705&labelColor=2E2E3F&style=flat)](https://github.com/spike0en/oplus_firmware_archive/network/members)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/spike0en/oneplus_archive/dump.yml?label=Build&logo=githubactions&logoColor=white&color=18673F&labelColor=2E2E3F&style=flat)](https://github.com/spike0en/oneplus_archive/actions)
+[![Total Downloads](https://img.shields.io/github/downloads/spike0en/oneplus_archive/total?label=Downloads&logo=github&logoColor=white&color=9E9D10&labelColor=2E2E3F&style=flat)](https://github.com/spike0en/oneplus_archive/releases)
 
-[![Total Downloads](https://img.shields.io/github/downloads/spike0en/oplus_firmware_archive/total?label=Downloads&logo=github&logoColor=white&color=9E9D10&labelColor=2E2E3F&style=flat)](https://github.com/spike0en/oplus_firmware_archive/releases)
-[![Latest Release](https://img.shields.io/github/release/spike0en/oplus_firmware_archive?label=Latest&logo=git&logoColor=white&color=18673F&labelColor=2E2E3F&style=flat)](https://github.com/spike0en/oplus_firmware_archive/releases/latest)
+[![Stars](https://img.shields.io/github/stars/spike0en/oneplus_archive?label=Stars&logo=github&logoColor=white&color=fb481f&labelColor=2E2E3F&style=flat)](https://github.com/spike0en/oneplus_archive/stargazers)
+[![Contributors](https://img.shields.io/github/contributors/spike0en/oneplus_archive?label=Contributors&logo=github&logoColor=white&color=2b2a7b&labelColor=2E2E3F&style=flat)](https://github.com/spike0en/oneplus_archive/graphs/contributors)
+[![Forks](https://img.shields.io/github/forks/spike0en/oneplus_archive?label=Forks&logo=github&logoColor=white&color=eeb705&labelColor=2E2E3F&style=flat)](https://github.com/spike0en/oneplus_archive/network/members)
 
 ## Overview 🔍
 
