@@ -99,7 +99,14 @@ wait
 # Prepare output folders
 mkdir -p out boot firmware
 
+# Generate SHA-256 hashes for all extracted image files with parallel processing
+echo "--- SHA256 Hashes ---"
 cd ota
+ls * | parallel -j $(nproc) "openssl dgst -sha256 -r" 2>/dev/null | sort -k2 -V | tee ../out/${TAG}_${REGION}-hash.sha256
+
+# === Organize Images ===
+echo "Organizing images..."
+
 # Move boot-related images
 for img in $BOOT; do
     if [ -f "${img}.img" ]; then
@@ -114,22 +121,29 @@ for img in $FIRMWARE; do
     fi
 done
 
-# Generate SHA-256 hashes and compress with 7z for boot images
-cd ../boot
-ls * | parallel -j $(nproc) openssl dgst -sha256 -r | sort -k2 -V > ../out/${TAG}_${REGION}-boot-hash.sha256
-7z a -mx6 -mmt$(nproc) ../out/${TAG}_${REGION}-boot.7z *
-cd ..
+# === Archive Images ===
+echo "Archiving images using optimized compression settings..."
 
-# Repeat for firmware images
-cd firmware
-ls * | parallel -j $(nproc) openssl dgst -sha256 -r | sort -k2 -V > ../out/${TAG}_${REGION}-firmware-hash.sha256
-7z a -mx6 -mmt$(nproc) ../out/${TAG}_${REGION}-firmware.7z *
-cd ..
+# Archive boot, firmware and logical images in parallel
+(
+    cd ../boot
+    7z a -mx6 -mmt$(nproc) ../out/${TAG}_${REGION}-boot.7z *
+) &
+
+(
+    cd ../firmware
+    7z a -mx6 -mmt$(nproc) ../out/${TAG}_${REGION}-firmware.7z *
+) &
+
+(
+    cd ../ota
+    7z a -mx6 -mmt$(nproc) ../out/${TAG}_${REGION}-logical.7z *
+) &
 
 wait
 
 # Sanitize filenames for release assets
-cd out
+cd ../out
 for f in *; do
     safe_name=$(echo "$f" | sed 's/(/-/' | sed 's/)//g')
     if [ "$f" != "$safe_name" ]; then
