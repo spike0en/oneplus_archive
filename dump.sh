@@ -137,7 +137,7 @@ echo "Archiving images using optimized compression settings..."
 
 (
     cd ../ota
-    7z a -mx6 -mmt$(nproc) ../out/${TAG}_${REGION}-logical.7z *
+    7z a -mx6 -mmt$(nproc) -v1900m ../out/${TAG}_${REGION}-logical.7z *
 ) &
 
 wait
