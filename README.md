@@ -13,8 +13,8 @@
 
 ## Overview 🔍
 
-- This archive contains stock firmware images for various [OnePlus phones](https://www.oneplus.com/store/phone).  
-- It is useful for flashing custom ROM(s) that require a specific firmware version—especially when that version isn’t bundled with the ROM itself.  
+- This archive contains stock OTA images for various [OnePlus phones](https://www.oneplus.com/store/phone).  
+- It is useful for flashing the stock ROM / custom ROM(s) that require a specific firmware version—especially when that version isn’t bundled with the ROM itself.  
 - Additionally, the archive includes stock `boot` / `init_boot` images in archived form, which helps with rooting or restoring stock partitions during OTA updates.
 
 ---
@@ -22,13 +22,14 @@
 ## Downloads 📥
 
 - Releases are tagged [**here**](https://github.com/spike0en/oplus_firmware_archive/releases) in the format: `version_name`_`region`.  
-- The stock OTA images are categorized into two groups: `-boot` and `firmware`. You can see the classification in [`devices.json`](https://github.com/spike0en/oneplus_archive/blob/main/devices.json).  
+- The stock OTA images are categorized into three groups: `-boot`, `firmware` and `logical`. You can see the classification in [`devices.json`](https://github.com/spike0en/oneplus_archive/blob/main/devices.json).  
 - Select your **device model** from the dropdown below to access the **Release Index**.  
 - **Region codes** used:  
   - `IN` → India  
   - `CN` → China  
   - `NA` → North America  
-  - `ROW` → Rest of World (Global / Europe)
+  - `ROW` → Rest of World [Global(`GLO`) / Europe(`EU`)] 
+- **Note that the `boot` and `firmware` category images would be identical for `EU` and `GLO` variants. `Logical` partitions will however be different (required only while flashing the full stock rom).**
 
 ---
 
@@ -147,6 +148,7 @@ Project is co-maintained by:
 - [gotenksIN](https://github.com/gotenksIN)
 - [PHATWalrus](https://github.com/PHATWalrus)
 - [yashaswee-exe](https://github.com/yashaswee-exe)
+- [Daniel210191](https://github.com/Daniel210191)
 
 ## Support the Project ⭐
 
