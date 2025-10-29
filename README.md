@@ -125,8 +125,7 @@ By using this archive, you acknowledge and accept these terms:
 | Model ID    | Region | Releases |
 |-------------|--------|----------|
 | **CPH2585** | IN     | [Releases for CPH2585](https://github.com/spike0en/oneplus_archive/releases?q=CPH2585) |
-| **CPH2609** | ROW    | [Releases for CPH2609](https://github.com/spike0en/oneplus_archive/releases?q=CPH2609) |
-| **CPH2611** | NA     | [Releases for CPH2611](https://github.com/spike0en/oneplus_archive/releases?q=CPH2611) |
+| **CPH2609** | EU/GLO | [Releases for CPH2609](https://github.com/spike0en/oneplus_archive/releases?q=CPH2609) |
 | **PJE110**  | CN     | [Releases for PJE110](https://github.com/spike0en/oneplus_archive/releases?q=PJE110)   |
 
 ---
