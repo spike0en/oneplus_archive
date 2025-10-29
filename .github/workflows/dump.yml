@@ -32,7 +32,7 @@ on:
 jobs:
   dump:
     permissions: write-all
-    runs-on: self-hosted
+    runs-on: phatty
 
     steps:      
     - name: Checkout repo
