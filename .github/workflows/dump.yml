@@ -27,6 +27,7 @@ on:
           - CN
           - GLO
           - EU
+          - ROW
 
 jobs:
   dump:
