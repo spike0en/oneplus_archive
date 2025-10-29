@@ -58,6 +58,17 @@ By using this archive, you acknowledge and accept these terms:
 
 ## Supported Models
 
+### OnePlus 15 — *infiniti*
+
+| Model ID    | Region | Releases |
+|-------------|--------|----------|
+| **PLK110**  | CN     | [Releases for PLK110](https://github.com/spike0en/oneplus_archive/releases?q=PLK110) |
+| **CPH2747** | EU/GLO | [Releases for CPH2747](https://github.com/spike0en/oneplus_archive/releases?q=CPH2747) |
+| **CPH2749** | IN     | [Releases for CPH2749](https://github.com/spike0en/oneplus_archive/releases?q=CPH2749) |
+| **CPH2745** | NA     | [Releases for CPH2745](https://github.com/spike0en/oneplus_archive/releases?q=CPH2745) |
+
+---
+
 ### OnePlus Pad 3 / Pad 2 Pro — *erhai*
 
 | Model ID    | Region | Releases |
