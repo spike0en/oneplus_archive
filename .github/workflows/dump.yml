@@ -25,6 +25,8 @@ on:
           - IN
           - NA
           - CN
+          - EU
+          - GLO
           - ROW
 
 jobs:
