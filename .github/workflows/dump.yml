@@ -12,6 +12,7 @@ on:
         type: choice
         options:
           - infiniti
+          - 15r
           - dodge
           - pagani
           - erhai
