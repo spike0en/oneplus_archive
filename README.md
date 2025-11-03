@@ -83,7 +83,7 @@ By using this archive, you acknowledge and accept these terms:
 | Model ID    | Region | Releases |
 |-------------|--------|----------|
 | **CPH2649** | IN     | [Releases for CPH2649](https://github.com/spike0en/oneplus_archive/releases?q=CPH2649) |
-| **CPH2653** | ROW    | [Releases for CPH2653](https://github.com/spike0en/oneplus_archive/releases?q=CPH2653) |
+| **CPH2653** | EU/GLO | [Releases for CPH2653](https://github.com/spike0en/oneplus_archive/releases?q=CPH2653) |
 | **CPH2655** | NA     | [Releases for CPH2655](https://github.com/spike0en/oneplus_archive/releases?q=CPH2655) |
 | **PJZ110**  | CN     | [Releases for PJZ110](https://github.com/spike0en/oneplus_archive/releases?q=PJZ110)   |
 
@@ -113,7 +113,7 @@ By using this archive, you acknowledge and accept these terms:
 | Model ID    | Region | Releases |
 |-------------|--------|----------|
 | **CPH2573** | IN     | [Releases for CPH2573](https://github.com/spike0en/oneplus_archive/releases?q=CPH2573) |
-| **CPH2581** | ROW    | [Releases for CPH2581](https://github.com/spike0en/oneplus_archive/releases?q=CPH2581) |
+| **CPH2581** | EU/GLO | [Releases for CPH2581](https://github.com/spike0en/oneplus_archive/releases?q=CPH2581) |
 | **CPH2583** | NA     | [Releases for CPH2583](https://github.com/spike0en/oneplus_archive/releases?q=CPH2583) |
 | **PJD110**  | CN     | [Releases for PJD110](https://github.com/spike0en/oneplus_archive/releases?q=PJD110)   |
 
