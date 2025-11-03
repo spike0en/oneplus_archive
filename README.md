@@ -45,14 +45,18 @@ By using this archive, you acknowledge and accept these terms:
 
 ### Region codes
 
-| Code | Region                                           |
-|------|--------------------------------------------------|
-| IN   | India                                            |
-| CN   | China                                            |
-| NA   | North America                                    |
-| ROW  | Rest of World (Global/GLO & Europe/EU variants)  |
+| Code | Region         |
+|------|----------------|
+| IN   | India          |
+| CN   | China          |
+| EU   | Europe         |
+| GLO  | Global         |
+| NA   | North America  |
+| ROW  | Rest of World  |
 
-> 📝 **Note:** The `boot` and `firmware` categories are identical for both `EU` and `GLO` variants. Only `logical` partitions differ and are needed for full stock ROM flashing.
+> 📝 **Note:**  
+> - The `boot` and `firmware` categories are identical for both `EU` and `GLO` variants. Only `logical` partitions differ and are needed for full stock ROM flashing.  
+> - The **ROW (Rest of World)** region is used when there are **no specific releases for EU or GLO** available or identifiable for that particular model.
 
 ---
 
@@ -60,72 +64,72 @@ By using this archive, you acknowledge and accept these terms:
 
 ### OnePlus 15 — *infiniti*
 
-| Model ID    | Region | Releases |
-|-------------|--------|----------|
-| **PLK110**  | CN     | [Releases for PLK110](https://github.com/spike0en/oneplus_archive/releases?q=PLK110) |
-| **CPH2747** | EU/GLO | [Releases for CPH2747](https://github.com/spike0en/oneplus_archive/releases?q=CPH2747) |
-| **CPH2749** | IN     | [Releases for CPH2749](https://github.com/spike0en/oneplus_archive/releases?q=CPH2749) |
-| **CPH2745** | NA     | [Releases for CPH2745](https://github.com/spike0en/oneplus_archive/releases?q=CPH2745) |
+| Model ID    | Releases |
+|-------------|-----------|
+| **PLK110**  | [CN](https://github.com/spike0en/oneplus_archive/releases?q=PLK110&expanded=true) |
+| **CPH2749** | [IN](https://github.com/spike0en/oneplus_archive/releases?q=CPH2749&expanded=true) |
+| **CPH2745** | [NA](https://github.com/spike0en/oneplus_archive/releases?q=CPH2745&expanded=true) |
+| **CPH2747** | [EU](https://github.com/spike0en/oneplus_archive/releases?q=CPH2747_+%29_EU&expanded=true) / [GLO](https://github.com/spike0en/oneplus_archive/releases?q=CPH2747_+%29_GLO&expanded=true) |
 
 ---
 
 ### OnePlus Pad 3 / Pad 2 Pro — *erhai*
 
-| Model ID    | Region | Releases |
-|-------------|--------|----------|
-| **OPD2415** | ROW    | [Releases for OPD2415](https://github.com/spike0en/oneplus_archive/releases?q=OPD2415) |
-| **OPD2413** | CN     | [Releases for OPD2413](https://github.com/spike0en/oneplus_archive/releases?q=OPD2413) |
+| Model ID    | Releases |
+|-------------|-----------|
+| **OPD2413** | [CN](https://github.com/spike0en/oneplus_archive/releases?q=OPD2413&expanded=true) |
+| **OPD2415** | [ROW](https://github.com/spike0en/oneplus_archive/releases?q=OPD2415&expanded=true) |
 
 ---
 
 ### OnePlus 13 — *dodge*
 
-| Model ID    | Region | Releases |
-|-------------|--------|----------|
-| **CPH2649** | IN     | [Releases for CPH2649](https://github.com/spike0en/oneplus_archive/releases?q=CPH2649) |
-| **CPH2653** | EU/GLO | [Releases for CPH2653](https://github.com/spike0en/oneplus_archive/releases?q=CPH2653) |
-| **CPH2655** | NA     | [Releases for CPH2655](https://github.com/spike0en/oneplus_archive/releases?q=CPH2655) |
-| **PJZ110**  | CN     | [Releases for PJZ110](https://github.com/spike0en/oneplus_archive/releases?q=PJZ110)   |
+| Model ID    | Releases |
+|-------------|-----------|
+| **PJZ110**  | [CN](https://github.com/spike0en/oneplus_archive/releases?q=PJZ110&expanded=true) |
+| **CPH2649** | [IN](https://github.com/spike0en/oneplus_archive/releases?q=CPH2649&expanded=true) |
+| **CPH2655** | [NA](https://github.com/spike0en/oneplus_archive/releases?q=CPH2655&expanded=true) |
+| **CPH2653** | [EU](https://github.com/spike0en/oneplus_archive/releases?q=CPH2653_+%29_EU&expanded=true) / [GLO](https://github.com/spike0en/oneplus_archive/releases?q=CPH2653_+%29_GLO&expanded=true) |
 
 ---
 
 ### OnePlus 13(S/T) — *pagani*
 
-| Model ID    | Region | Releases |
-|-------------|--------|----------|
-| **CPH2723** | ROW    | [Releases for CPH2723](https://github.com/spike0en/oneplus_archive/releases?q=CPH2723) |
-| **PKX110**  | CN     | [Releases for PKX110](https://github.com/spike0en/oneplus_archive/releases?q=PKX110)   |
+| Model ID    | Releases |
+|-------------|-----------|
+| **PKX110**  | [CN](https://github.com/spike0en/oneplus_archive/releases?q=PKX110&expanded=true) |
+| **CPH2723** | [IN](https://github.com/spike0en/oneplus_archive/releases?q=CPH2723&expanded=true) |
 
 ---
 
-### OnePlus 13R / Ace 5 — *giulia*
+### OnePlus 13R / Ace 5 — *giulia*
 
-| Model ID    | Region | Releases |
-|-------------|--------|----------|
-| **CPH2691** | IN     | [Releases for CPH2691](https://github.com/spike0en/oneplus_archive/releases?q=CPH2691) |
-| **CPH2645** | EU/GLO | [Releases for CPH2645](https://github.com/spike0en/oneplus_archive/releases?q=CPH2645) |
-| **PKG110**  | CN     | [Releases for PKG110](https://github.com/spike0en/oneplus_archive/releases?q=PKG110)   |
+| Model ID    | Releases |
+|-------------|-----------|
+| **PKG110**  | [CN](https://github.com/spike0en/oneplus_archive/releases?q=PKG110&expanded=true) |
+| **CPH2691** | [IN](https://github.com/spike0en/oneplus_archive/releases?q=CPH2691&expanded=true) |
+| **CPH2645** | [EU](https://github.com/spike0en/oneplus_archive/releases?q=CPH2645_+%29_EU&expanded=true) / [GLO](https://github.com/spike0en/oneplus_archive/releases?q=CPH2645_+%29_GLO&expanded=true) |
 
 ---
 
 ### OnePlus 12 — *waffle*
 
-| Model ID    | Region | Releases |
-|-------------|--------|----------|
-| **CPH2573** | IN     | [Releases for CPH2573](https://github.com/spike0en/oneplus_archive/releases?q=CPH2573) |
-| **CPH2581** | EU/GLO | [Releases for CPH2581](https://github.com/spike0en/oneplus_archive/releases?q=CPH2581) |
-| **CPH2583** | NA     | [Releases for CPH2583](https://github.com/spike0en/oneplus_archive/releases?q=CPH2583) |
-| **PJD110**  | CN     | [Releases for PJD110](https://github.com/spike0en/oneplus_archive/releases?q=PJD110)   |
+| Model ID    | Releases |
+|-------------|-----------|
+| **PJD110**  | [CN](https://github.com/spike0en/oneplus_archive/releases?q=PJD110&expanded=true) |
+| **CPH2573** | [IN](https://github.com/spike0en/oneplus_archive/releases?q=CPH2573&expanded=true) |
+| **CPH2583** | [NA](https://github.com/spike0en/oneplus_archive/releases?q=CPH2583&expanded=true) |
+| **CPH2581** | [EU](https://github.com/spike0en/oneplus_archive/releases?q=CPH2581_+%29_EU&expanded=true) / [GLO](https://github.com/spike0en/oneplus_archive/releases?q=CPH2581_+%29_GLO&expanded=true) |
 
 ---
 
-### OnePlus 12R / Ace 3 — *aston*
+### OnePlus 12R / Ace 3 — *aston*
 
-| Model ID    | Region | Releases |
-|-------------|--------|----------|
-| **CPH2585** | IN     | [Releases for CPH2585](https://github.com/spike0en/oneplus_archive/releases?q=CPH2585) |
-| **CPH2609** | EU/GLO | [Releases for CPH2609](https://github.com/spike0en/oneplus_archive/releases?q=CPH2609) |
-| **PJE110**  | CN     | [Releases for PJE110](https://github.com/spike0en/oneplus_archive/releases?q=PJE110)   |
+| Model ID    | Releases |
+|-------------|-----------|
+| **PJE110**  | [CN](https://github.com/spike0en/oneplus_archive/releases?q=PJE110&expanded=true) |
+| **CPH2585** | [IN](https://github.com/spike0en/oneplus_archive/releases?q=CPH2585&expanded=true) |
+| **CPH2609** | [EU](https://github.com/spike0en/oneplus_archive/releases?q=CPH2609_+%29_EU&expanded=true) / [GLO](https://github.com/spike0en/oneplus_archive/releases?q=CPH2609_+%29_GLO&expanded=true) |
 
 ---
 
