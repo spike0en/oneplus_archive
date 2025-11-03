@@ -1,4 +1,4 @@
-name: Dump firmware(s)
+name: OnePlus FW Dumper
 
 on:
   workflow_dispatch:
