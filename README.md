@@ -73,6 +73,14 @@ By using this archive, you acknowledge and accept these terms:
 
 ---
 
+### OnePlus Ace 6 — *ktm*
+
+| Model ID    | Releases |
+|-------------|-----------|
+| **PLQ110**  | [CN](https://github.com/spike0en/oneplus_archive/releases?q=PLQ110&expanded=true) |
+
+---
+
 ### OnePlus Pad 3 / Pad 2 Pro — *erhai*
 
 | Model ID    | Releases |
