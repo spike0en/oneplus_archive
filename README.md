@@ -67,8 +67,8 @@ By using this archive, you acknowledge and accept these terms:
 | Model ID    | Releases |
 |-------------|-----------|
 | **PLK110**  | [CN](https://github.com/spike0en/oneplus_archive/releases?q=PLK110&expanded=true) |
-| **CPH2749** | [IN](https://github.com/spike0en/oneplus_archive/releases?q=CPH2749&expanded=true) |
-| **CPH2745** | [NA](https://github.com/spike0en/oneplus_archive/releases?q=CPH2745&expanded=true) |
+| **CPH2749** | [NA](https://github.com/spike0en/oneplus_archive/releases?q=CPH2749&expanded=true) |
+| **CPH2745** | [IN](https://github.com/spike0en/oneplus_archive/releases?q=CPH2745&expanded=true) |
 | **CPH2747** | [EU](https://github.com/spike0en/oneplus_archive/releases?q=CPH2747_+%29_EU&expanded=true) / [GLO](https://github.com/spike0en/oneplus_archive/releases?q=CPH2747_+%29_GLO&expanded=true) |
 
 ---
