@@ -174,13 +174,14 @@ Special thanks to our key contributors and co‑maintainers for their invaluable
 ### Co-maintainers
 
 <p align="left">
+  <a href="https://github.com/Daniel210191"><img src="https://img.shields.io/badge/-Daniel-E91E63?style=flat-square&logo=github&logoColor=white" alt="Daniel210191"></a>
+  <a href="https://github.com/yashaswee-exe"><img src="https://img.shields.io/badge/-Yashaswee-8E24AA?style=flat-square&logo=github&logoColor=white" alt="yashaswee-exe"></a>
+  <a href="https://github.com/snowwolf725"><img src="https://img.shields.io/badge/-Snowwolf-607D8B?style=flat-square&logo=github&logoColor=white" alt="snowwolf725"></a>
+  <a href="https://github.com/PHATWalrus"><img src="https://img.shields.io/badge/-Phatwalrus-9E9D10?style=flat-square&logo=github&logoColor=white" alt="PHATWalrus"></a>
   <a href="https://github.com/madmax7896"><img src="https://img.shields.io/badge/-Madmax-0078D7?style=flat-square&logo=github&logoColor=white" alt="madmax7896"></a>
   <a href="https://github.com/chandu078"><img src="https://img.shields.io/badge/-Chandu-FF5C57?style=flat-square&logo=github&logoColor=white" alt="chandu078"></a>
   <a href="https://github.com/HELLBOY017"><img src="https://img.shields.io/badge/-HELLBOY017-00BCD4?style=flat-square&logo=github&logoColor=white" alt="HELLBOY017"></a>
   <a href="https://github.com/gotenksIN"><img src="https://img.shields.io/badge/-Omkar-4CAF50?style=flat-square&logo=github&logoColor=white" alt="gotenksIN"></a>
-  <a href="https://github.com/PHATWalrus"><img src="https://img.shields.io/badge/-Phatwalrus-9E9D10?style=flat-square&logo=github&logoColor=white" alt="PHATWalrus"></a>
-  <a href="https://github.com/yashaswee-exe"><img src="https://img.shields.io/badge/-Yashaswee-8E24AA?style=flat-square&logo=github&logoColor=white" alt="yashaswee-exe"></a>
-  <a href="https://github.com/Daniel210191"><img src="https://img.shields.io/badge/-Daniel-E91E63?style=flat-square&logo=github&logoColor=white" alt="Daniel210191"></a>
 </p>
 
 ---
